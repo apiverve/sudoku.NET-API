@@ -1,4 +1,4 @@
-Sudoku API
+Sudoku Generator API
 ============
 
 Sudoku is a simple tool for generating Sudoku puzzles. It returns a Sudoku puzzle.
@@ -7,7 +7,7 @@ Sudoku is a simple tool for generating Sudoku puzzles. It returns a Sudoku puzzl
 ![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [Sudoku API](https://apiverve.com/marketplace/api/sudoku)
+This is a .NET Wrapper for the [Sudoku Generator API](https://apiverve.com/marketplace/api/sudoku)
 
 ---
 
@@ -15,17 +15,17 @@ This is a .NET Wrapper for the [Sudoku API](https://apiverve.com/marketplace/api
 
 Using the .NET CLI:
 ```
-dotnet add package APIVerve.API.Sudoku
+dotnet add package APIVerve.API.SudokuGenerator
 ```
 
 Using the Package Manager:
 ```
-nuget install APIVerve.API.Sudoku
+nuget install APIVerve.API.SudokuGenerator
 ```
 
 Using the Package Manager Console:
 ```
-Install-Package APIVerve.API.Sudoku
+Install-Package APIVerve.API.SudokuGenerator
 ```
 
 From within Visual Studio:
@@ -33,8 +33,8 @@ From within Visual Studio:
 1. Open the Solution Explorer.
 2. Right-click on a project within your solution.
 3. Click on Manage NuGet Packages..
-4. Click on the Browse tab and search for "APIVerve.API.Sudoku".
-5. Click on the APIVerve.API.Sudoku package, click Install.
+4. Click on the Browse tab and search for "APIVerve.API.SudokuGenerator".
+5. Click on the APIVerve.API.SudokuGenerator package, click Install.
 
 
 ---
@@ -48,17 +48,17 @@ You can get it by signing up at [https://apiverve.com](https://apiverve.com)
 
 ## Usage
 
-The Sudoku API documentation is found here: [https://docs.apiverve.com/api/sudoku](https://docs.apiverve.com/api/sudoku).  
+The Sudoku Generator API documentation is found here: [https://docs.apiverve.com/api/sudoku](https://docs.apiverve.com/api/sudoku).  
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
 
 ###### Authentication
-Sudoku API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
+Sudoku Generator API uses API Key-based authentication. When you create an instance of the API client, you can pass your API Key as a parameter.
 
 ```
 // Create an instance of the API client
-var apiClient = new SudokuAPIClient("[YOUR_API_KEY]", true);
+var apiClient = new SudokuGeneratorAPIClient("[YOUR_API_KEY]", true);
 ```
 
 ---
@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new SudokuQueryOptions {
+var queryOptions = new SudokuGeneratorQueryOptions {
   difficulty = "medium"
 };
 ```
