@@ -38,24 +38,6 @@ namespace APIVerve
 
     }
     /// <summary>
-    /// Image data
-    /// </summary>
-    public class Image
-    {
-        [JsonProperty("imageName")]
-        public string ImageName { get; set; }
-
-        [JsonProperty("format")]
-        public string Format { get; set; }
-
-        [JsonProperty("downloadURL")]
-        public string DownloadURL { get; set; }
-
-        [JsonProperty("expires")]
-        public int Expires { get; set; }
-
-    }
-    /// <summary>
     /// Solution data
     /// </summary>
     public class Solution
